@@ -2,7 +2,7 @@ var perso = document.querySelector(".perso");
 var obstacles = document.querySelector(".obstacles");
 
 function sauter(){
-    // function pour faire sauter le personnage
+
     if(perso.classList != "animation"){
         perso.classList.add('animation'); 
     }
@@ -11,7 +11,6 @@ function sauter(){
     },500)
 }
 
-//verifier si  l'obstacle touche le personnage
 
 var verification = setInterval(function(){
     var persoTop = parseInt(window.getComputedStyle(perso).getPropertyValue("top")) ;
